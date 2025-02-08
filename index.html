@@ -1,33 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>rescue</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Paws & Hearts Animal Rescue</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
 </head>
-<body>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Voice For Voiceless</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="emergency.html" class="hover:text-blue-200">Emergency</a>
+                <a href="#home" class="hover:text-blue-200">Home</a>
+                <a href="#adopt" class="hover:text-blue-200">Adopt</a>
+                <a href="#donate" class="hover:text-blue-200">Donate</a>
+            
+            </div>
+        </div>
+    </nav>
 
-    <div class="meg">
-        <header>
-       
-            <center><h1 class="he"><i>Here for voiceless </i></h1></center>
-        </header>
-        
-</div>
-<h2>
-    <nav class="nan">
-    <ul class="pol">
-    <li><a href="">Emergency</a></li>
-    <li><a href="">Home</a></li>
-    <li><a href="">About Us</a></li>
-    </ul>
-</nav>
-</h2>
+    <!-- Hero Section -->
+    <header class="relative">
+        <div class="bg-gray-900 h-96 flex items-center">
+            <img src="recsue.png.jpg" alt="Happy rescued pets" class="absolute w-full h-full object-cover opacity-50">
+            <div class="container mx-auto px-4 relative z-10 text-white">
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">Animal Rescue kozhikode</h2>
+                <p class="text-xl mb-8">Every animal deserves a better life</p>
+                <a href="contact.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-blue-700 transition duration-300">contact now</a>
+            </div>
+        </div>
+    </header>
 <center>
-<img src="dog.png">
+    <h1 class="about" style="font-size: larger;"><b>What we do</b></h1>
+    <p class="jgd">We strongly believe in saving and protecting animals in need, 
+        as well as raising standards of care, 
+        and awareness of issues affecting animals today.<br>
+         Our goal is to inspire, respect, and compassion for all living things and empower each individual— young and old — to work toward caring for nature </p>
 </center>
-<center>
-<h2 class="dog">Animal rescue</h2>
-</center>
+    <!-- Featured Pets -->
+    <<section id="adopt" class="py-16 bg-white"> 
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Rescues</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pet Card 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <img src="acciani.png.jpg" alt="Dog">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Accident situation</h3>
+                        <p class="text-gray-600 mb-4">To contact nearest Helpcenter </p>
+                        <a href="rescue.html" class="text-blue-600 font-semibold hover:text-blue-800">contact now</a>
+                    </div>
+                </div>
+
+                <!-- Pet Card 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <img src="stray.png.jpg" alt="Cat">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Street dog Rescue</h3>
+                        <p class="text-gray-600 mb-4">To rescue abandonded dogs</p>
+                        <a href="contact.html" class="text-blue-600 font-semibold hover:text-blue-800">contact now</a>
+                    </div>
+                </div>
+
+                <!-- Pet Card 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <img src="abusecat.png.jpg" alt="cat">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Animal Abuse</h3>
+                        <p class="text-gray-600 mb-4">To act against violence to animals</p>
+                        <a href="contact.html" class="text-blue-600 font-semibold hover:text-blue-800">To Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Help -->
+    <section id="donate" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Ways to Help</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Donate -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Donate</h3>
+                    <p class="text-gray-600 mb-6">Your donation helps provide food, shelter, and medical care for our animals.</p>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-300">Make a Donation</button>
+                </div>
+
+                <!-- Volunteer -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Volunteer</h3>
+                    <p class="text-gray-600 mb-6">Join our team of dedicated volunteers and make a difference in animals' lives.</p>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-300">Join Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">voice for voiceless</h3>
+                    <p class="text-gray-400">Dedicated to finding loving homes for animals in need.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Adoption Process</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Visit Us</h3>
+                    <p class="text-gray-400">123 Rescue Lane<br>Pawsville, ST 12345<br>(555) 123-4567</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Paws & Hearts Animal Rescue. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
