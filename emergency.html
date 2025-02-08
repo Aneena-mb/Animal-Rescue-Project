@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Find Nearby Hospitals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #79cfd5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:#ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search-box button:hover {
+            background-color: #0056b3;
+        }
+
+        .hospital-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .hospital-list li {
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .hospital-list h3 {
+            margin: 0;
+            color: #007bff;
+        }
+
+        .hospital-list p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .hospital-list a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .hospital-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find Nearby Hospitals</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter your location (e.g., city or zip code)">
+            <button onclick="searchHospitals()">Search</button>
+        </div>
+        <ul class="hospital-list" id="hospitalList">
+            <!-- Hospital data will be dynamically populated here -->
+        </ul>
+    </div>
+
+    <script>
+        // Sample hospital data (can be replaced with API data)
+        const hospitals = [
+            {
+                name: "District vetinary Hospital",
+                address: "Near Fathima Hospital",
+                phone: "04952368349",
+                 website:"https://jsdl.in/DT-382YYQY6AIY"
+                
+            },
+            {
+                name: "Dr.Vinod Malabar pet clinic",
+                address: " Chakkorathukulam, Kozhikode, Kerala 673006",
+                phone: "0495 236 5339"
+            },
+            {
+                name: "Calicut Veterinary Clinic: Dr Harish Krishnan",
+                address: "Kerala water authority road, kerala water authority,Malaparamba",
+                phone: "094962 88839"
+                
+            }
+        ];
+
+        // Function to display hospitals
+        function displayHospitals(hospitals) {
+            const hospitalList = document.getElementById('hospitalList');
+            hospitalList.innerHTML = ''; // Clear previous results
+
+            hospitals.forEach(hospital => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <h3>${hospital.name}</h3>
+                    <p>${hospital.address}</p>
+                    <p>Phone: <a href="tel:${hospital.phone}">${hospital.phone}</a></p>
+                    <p>Website: <a href="${hospital.website}" target="_blank">${hospital.website}</a></p>
+                `;
+                hospitalList.appendChild(li);
+            });
+        }
+
+        // Function to search hospitals (simulated search)
+        function searchHospitals() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const filteredHospitals = hospitals.filter(hospital =>
+                hospital.name.toLowerCase().includes(searchInput) ||
+                hospital.address.toLowerCase().includes(searchInput)
+            );
+            displayHospitals(filteredHospitals);
+        }
+
+        // Display all hospitals on page load
+        displayHospitals(hospitals);
+    </script>
+</body>
+</html>

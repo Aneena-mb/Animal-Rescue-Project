@@ -1,0 +1,62 @@
+body{
+    background-color:lightskyblue
+}
+.he{
+    text-decoration: solid;
+    text-size-adjust: 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(90deg, #0c053f, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.meg{
+    width: 100%;
+    height: 190px;
+    background-color:#207586;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.nan li{
+    display: inline;
+    text-align: left;
+    word-spacing: 4px;
+     padding-right: 20px; 
+    /* padding-left: 20px; */
+    /* justify-content: left; */
+    /* align-items: left; */
+}
+.nav a{
+    text-align: right;
+
+}
+.pol{
+text-align: right;
+word-spacing: 4px;
+}
+img{
+    width: 300px;
+    height: auto;
+    background-color: transparent;
+    
+}
+.dog{
+ 
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 100px;
+    
+
+}
+
